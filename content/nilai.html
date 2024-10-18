@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Program Nilai</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<form id="inputNilai">
+    <input type="text" id="txtNilai" placeholder="Input Nilai">
+    <button type="button" id="btnHasil" onclick="calculateNilai();">Cek Nilai</button> Or Press Enter<br>
+</form>
+
+Nilai : <input type="text" id="NilaiOutput">
+Grade : <input type="text" id="Grade"><br>
+Pesan : <label id="result"></label>
+
+<div>
+    <a href="../index.html">
+        <div class="icon"></div>
+    </a>
+</div>
+
+<script src="../js/score.js"></script>
+<script>
+    document.getElementById('inputNilai').addEventListener('submit', function (event) {
+        event.preventDefault();
+        calculateNilai();
+    });
+</script>
+</body>
+
+</html>
